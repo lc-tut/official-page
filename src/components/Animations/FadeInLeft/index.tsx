@@ -1,21 +1,24 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import 'animate.css';
+import "animate.css";
 
 type FadeInLeftProps = {
-    children: React.ReactNode;
-}
+  children: React.ReactNode;
+};
 
 export default function FadeInLeft({ children }: FadeInLeftProps) {
-    const { ref, inView } = useInView({
-        // オプション
-        rootMargin: '-50px',
-        triggerOnce: true,
-    });
+  const { ref, inView } = useInView({
+    // オプション
+    rootMargin: "-50px",
+    triggerOnce: true,
+  });
 
-    return (
-        <div ref={ref} className={`animate__animated ${inView ? 'animate__fadeInLeft' : 'animate__fadeOut'}`}>
-            {children}
-        </div>
-    )
+  return (
+    <div
+      ref={ref}
+      className={`animate__animated ${inView ? "animate__fadeInLeft" : "animate__fadeOut"}`}
+    >
+      {children}
+    </div>
+  );
 }

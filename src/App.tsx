@@ -15,9 +15,8 @@ function App() {
           <IntroductionBox title="活動内容" />
         </FadeInLeft>
       </Container>
-
     </>
-  )
+  );
 }
 
 export default App;
