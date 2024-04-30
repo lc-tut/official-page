@@ -8,7 +8,6 @@ type FadeInLeftProps = {
 
 export default function FadeInLeft({ children }: FadeInLeftProps) {
   const { ref, inView } = useInView({
-    // オプション
     rootMargin: "-50px",
     triggerOnce: true,
   });

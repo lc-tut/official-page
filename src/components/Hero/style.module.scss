@@ -1,8 +1,12 @@
-.field {
+.scrollDownField {
 	position: absolute;
     bottom: 0;
     left: calc(50% - 30px);
     padding-bottom: 50px;
+
+    @media screen and (max-width: 768px) {
+        padding-bottom: 25px;  
+    }
 }
 
 .scroll {
