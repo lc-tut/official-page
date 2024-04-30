@@ -1,5 +1,5 @@
 import logo from "../../assets/logo.png";
-import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
 import { MenuItem } from "../types/menuItems";
 
 type MenuItemProps = {
@@ -38,20 +38,23 @@ export default function Navbar({ menuItems }: MenuItemProps) {
           </svg>
         </button>
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-
-            {
-              menuItems.map((item, key) => {
-                return (
-                  <li key={key}>
-                    <Link to={item.href} className="block py-2 px-3 text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 md:text-gray-900 md:hover:text-gray-900 md:p-0 md:dark:text-gray-300 md:dark:hover:text-gray-100" spy={true} smooth={true} duration={500} offset={-64}>
-                      {item.title}
-                    </Link>
-                  </li>
-                )
-              })
-            }
+            {menuItems.map((item, key) => {
+              return (
+                <li key={key}>
+                  <Link
+                    to={item.href}
+                    className="block py-2 px-3 text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 md:text-gray-900 md:hover:text-gray-900 md:p-0 md:dark:text-gray-300 md:dark:hover:text-gray-100"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-64}
+                  >
+                    {item.title}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>

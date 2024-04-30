@@ -1,5 +1,5 @@
-import { Element } from 'react-scroll';
-import TitleBox from '../TitleBox';
+import { Element } from "react-scroll";
+import TitleBox from "../TitleBox";
 
 type IntroductionBoxLayoutProps = {
   title: string;
@@ -7,9 +7,13 @@ type IntroductionBoxLayoutProps = {
   children: React.ReactNode;
 };
 
-export default function IntrodcutionBoxLayout({ title, scrollTargetName, children }: IntroductionBoxLayoutProps) {
+export default function IntrodcutionBoxLayout({
+  title,
+  scrollTargetName,
+  children,
+}: IntroductionBoxLayoutProps) {
   return (
-    <Element name={scrollTargetName} className='py-20'>
+    <Element name={scrollTargetName} className="py-20">
       <TitleBox title={title} />
       {children}
     </Element>

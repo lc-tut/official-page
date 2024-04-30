@@ -33,7 +33,7 @@ function App() {
             <FAQ faqLists={faqLists} />
           </FadeInLeft>
           <FadeInLeft>
-            <Contact/>
+            <Contact />
           </FadeInLeft>
         </MainLayout>
         <Footer />
