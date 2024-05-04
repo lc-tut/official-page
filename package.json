@@ -6,9 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "lint:fix": "eslint --fix . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "format": "prettier --write src/**/*.ts src/**/*.tsx",
+    "lint": "eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier --write **/*.{js,jsx,ts,tsx,css,scss}",
     "preview": "vite preview",
     "prepare": "husky install"
   },
@@ -44,8 +43,8 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
+      "pnpm run lint",
+      "pnpm run format"
     ]
   }
 }
