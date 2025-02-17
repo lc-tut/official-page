@@ -22,7 +22,7 @@ export default function Hero() {
 
             <div className="flex flex-col mt-6 space-y-3 lg:space-y-0 lg:flex-row">
               <a
-                href="#"
+                href="https://discord.gg/Pq6sHz7qjc"
                 className="px-6 py-3 text-white bg-blue-700 rounded-lg hover:bg-blue-800"
               >
                 Discordに参加

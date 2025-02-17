@@ -14,10 +14,6 @@ export const menuItems: MenuItem[] = [
     href: "#faq",
   },
   {
-    title: "ブログ",
-    href: "#blog",
-  },
-  {
     title: "お問い合わせ",
     href: "#contact",
   },
