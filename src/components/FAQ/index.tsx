@@ -15,13 +15,13 @@ export default function FAQ({ faqLists }: FaqListsProps) {
   return (
     <IntrodcutionBoxLayout title="よくある質問" scrollTargetName="#faq">
       <div className="w-full">
-        <div className="divide-y divide-gray-100">
+        <div className="divide-y divide-gray-100 dark:divide-gray-700">
           {faqLists.map((faq, index) => {
             return (
               <details className="group" key={index}>
-                <summary className="flex cursor-pointer list-none items-center justify-between py-4 text-lg font-medium">
+                <summary className="flex cursor-pointer list-none items-center justify-between py-4 text-lg font-medium dark:text-white">
                   {faq.question}
-                  <div className="text-secondary-500">
+                  <div className="text-secondary-500 dark:text-white">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -38,7 +38,7 @@ export default function FAQ({ faqLists }: FaqListsProps) {
                     </svg>
                   </div>
                 </summary>
-                <div className="pb-4 text-neutral-600">
+                <div className="pb-4 text-neutral-600 dark:text-gray-400">
                   {breakline(faq.answer)}
                 </div>
               </details>

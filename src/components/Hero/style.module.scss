@@ -1,55 +1,65 @@
-.scrollDownField {
-	position: absolute;
-    bottom: 0;
-    left: calc(50% - 30px);
-    padding-bottom: 50px;
+:root {
+  --border-color: #1f2937;
+}
 
-    @media screen and (max-width: 768px) {
-        padding-bottom: 25px;  
-    }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --border-color: #d1d5db;
+  }
+}
+
+.scrollDownField {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 30px);
+  padding-bottom: 5vh;
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 5vh;
+  }
 }
 
 .scroll {
-	width: 60px;
-	height: 60px;
-	border: 2px solid #333;
-	border-radius: 50%;
-	position: relative;
-	animation: down 1.5s infinite;
-	-webkit-animation: down 1.5s infinite;
-	&::before {
-		content: '';
-		position: absolute;
-		top: 15px;
-		left: 18px;
-		width: 18px;
-		height: 18px;
-		border-left: 2px solid #333;
-  	border-bottom: 2px solid #333;
-		transform: rotate(-45deg);
-	}
+  width: 3.75rem;
+  height: 3.75rem;
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+  position: relative;
+  animation: down 1.5s infinite;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 20px;
+    height: 18px;
+    border-left: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
+    transform: rotate(-45deg);
+  }
 }
 
 @keyframes down {
-	0% {
-		transform: translate(0);
-	}
-	20% {
-		transform: translateY(15px);
-	}
-	40% {
-		transform: translate(0);
-	}
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
 }
 
 @-webkit-keyframes down {
-	0% {
-		transform: translate(0);
-	}
-	20% {
-		transform: translateY(15px);
-	}
-	40% {
-		transform: translate(0);
-	}
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
 }
