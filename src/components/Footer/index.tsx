@@ -1,4 +1,4 @@
-import { SiZenn, SiDiscord, SiGithub } from "react-icons/si";
+import { SiZenn, SiDiscord, SiGithub, SiX } from "react-icons/si";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -11,6 +11,12 @@ export default function Footer() {
             © {year} LinuxClub.
           </span>
           <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
+            <a
+              href="https://x.com/lc_tut"
+              className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+            >
+              <SiX />
+            </a>
             <a
               href="https://discord.gg/Pq6sHz7qjc"
               className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
