@@ -1,4 +1,4 @@
 export type FaqLists = {
-    question: string;
-    answer: string;
+  question: string;
+  answer: string;
 };

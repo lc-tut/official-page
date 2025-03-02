@@ -11,7 +11,7 @@ export default function Footer() {
             © {year} LinuxClub.
           </span>
           <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
-          <a
+            <a
               href="https://discord.gg/Pq6sHz7qjc"
               className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
             >
