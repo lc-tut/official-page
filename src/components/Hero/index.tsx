@@ -3,7 +3,7 @@ import styles from "./style.module.scss";
 
 export default function Hero() {
   return (
-    <div className="h-[calc(100vh-124px)] lg:h-[calc(100vh-64px)]  flex items-center justify-center">
+    <div className="h-[calc(100vh-72px)] lg:h-[calc(100vh-64px)]  flex items-center justify-center dark:bg-gray-800/90">
       <div className="container max-w-screen-xl px-12 lg:px-28">
         <div className="flex items-center flex-col md:flex-row">
           <div className="basis-1/2 w-full">

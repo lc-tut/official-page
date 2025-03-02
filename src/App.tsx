@@ -17,7 +17,7 @@ import { faqLists } from "./config/faqLists";
 function App() {
   return (
     <>
-      <div>
+      <div className="dark:bg-gray-900">
         <Header>
           <Navbar menuItems={menuItems} />
         </Header>
