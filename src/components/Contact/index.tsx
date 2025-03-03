@@ -5,7 +5,14 @@ export default function Contact() {
     <IntrodcutionBoxLayout title="お問い合わせ" scrollTargetName="#contact">
       <div className="pb-6">
         <p className="text-gray-700 dark:text-gray-400 text-lg leading-relaxed">
-          お問い合わせは、以下のメールアドレスまたは、LinuxClub公式XのDMまでお願いします。
+          お問い合わせは、以下のメールアドレスまたは、
+          <a
+            className="dark:text-white px-1 underline"
+            href="https://x.com/lc_tut"
+          >
+            LinuxClub公式X
+          </a>
+          のDMまでお願いします。
         </p>
         <code className="dark:text-white">linuxclub.tut[at]gmail.com</code>
       </div>
