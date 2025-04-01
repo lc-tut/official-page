@@ -18,7 +18,7 @@ export default function Footer() {
               <SiX />
             </a>
             <a
-              href="https://discord.gg/Pq6sHz7qjc"
+              href="https://discord.gg/lcn"
               className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
             >
               <SiDiscord />
