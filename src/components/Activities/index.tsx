@@ -50,10 +50,10 @@ export default function Activities() {
           </span>
 
           <h2 className="mt-2 font-semibold text-base sm:text-lg dark:text-white">
-            BGP構築
+            AS運用
           </h2>
           <p className="sm:mt-1 block text-sm sm:text-base text-gray-600 dark:text-gray-400">
-            LinuxClubでは、一部のメンバーがBGPルーティングを構築しています。
+            LinuxClubでは、AS152865を運用しております。
           </p>
           <p className="sm:mt-1 block text-sm sm:text-base text-gray-600 dark:text-gray-400">
             インターネットの基盤技術であるBGPを学び、実際に構築することで、ネットワーク技術の理解を深めています。
