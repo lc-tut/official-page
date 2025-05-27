@@ -53,7 +53,14 @@ export default function Activities() {
             AS運用
           </h2>
           <p className="sm:mt-1 block text-sm sm:text-base text-gray-600 dark:text-gray-400">
-            LinuxClubでは、AS152865を運用しております。
+            LinuxClubでは、
+            <a
+              className="dark:text-white px-1 underline"
+              href="https://www.peeringdb.com/net/38324"
+            >
+              AS152865
+            </a>
+            を運用しております。
           </p>
           <p className="sm:mt-1 block text-sm sm:text-base text-gray-600 dark:text-gray-400">
             インターネットの基盤技術であるBGPを学び、実際に構築することで、ネットワーク技術の理解を深めています。
