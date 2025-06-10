@@ -9,7 +9,7 @@ const containerStyle: CSSProperties = {
   marginBottom: "1rem",
 };
 const videoWrapperStyle: CSSProperties = {
-  position: "relative",
+  // position: "relative",
   width: "100%",
   maxWidth: "800px",
   borderRadius: "8px",
