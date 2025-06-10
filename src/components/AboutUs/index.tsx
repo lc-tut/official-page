@@ -9,7 +9,6 @@ const containerStyle: CSSProperties = {
   marginBottom: "1rem",
 };
 const videoWrapperStyle: CSSProperties = {
-  // position: "relative",
   width: "100%",
   maxWidth: "800px",
   borderRadius: "8px",
@@ -19,7 +18,7 @@ const videoWrapperStyle: CSSProperties = {
 const responsiveIframeStyle: CSSProperties = {
   position: "relative",
   width: "100%",
-  aspectRatio: "16 / 9" /* 16:9のアスペクト比 */,
+  aspectRatio: 16 / 9 /* 16:9のアスペクト比 */,
 };
 const iframeStyle: CSSProperties = {
   position: "absolute",
@@ -53,7 +52,7 @@ export default function AboutUs() {
 
         <div style={containerStyle}>
           <div style={videoWrapperStyle}>
-            <div style={responsiveIframeStyle}>
+            <figure style={responsiveIframeStyle}>
               <iframe
                 style={iframeStyle}
                 loading="lazy"
@@ -63,7 +62,7 @@ export default function AboutUs() {
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
               />
-            </div>
+            </figure>
           </div>
         </div>
       </div>
