@@ -1,39 +1,36 @@
 import IntrodcutionBoxLayout from "../IntrodcutionBoxLayout";
 import { CSSProperties } from "react";
 
+const containerStyle: CSSProperties = {
+  display: "flex",
+  justifyContent: "center",
+  width: "100%",
+  marginTop: "2rem",
+  marginBottom: "1rem",
+};
+const videoWrapperStyle: CSSProperties = {
+  position: "relative",
+  width: "100%",
+  maxWidth: "800px",
+  borderRadius: "8px",
+  overflow: "hidden",
+  boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+};
+const responsiveIframeStyle: CSSProperties = {
+  position: "relative",
+  width: "100%",
+  aspectRatio: "16 / 9" /* 16:9のアスペクト比 */,
+};
+const iframeStyle: CSSProperties = {
+  position: "absolute",
+  top: 0,
+  left: 0,
+  width: "100%",
+  height: "100%",
+  border: "none",
+};
+
 export default function AboutUs() {
-  const containerStyle: CSSProperties = {
-    display: "flex",
-    justifyContent: "center",
-    width: "100%",
-    marginTop: "2rem",
-    marginBottom: "1rem",
-  };
-
-  const videoWrapperStyle: CSSProperties = {
-    position: "relative",
-    width: "100%",
-    maxWidth: "800px",
-    borderRadius: "8px",
-    overflow: "hidden",
-    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-  };
-
-  const responsiveIframeStyle: CSSProperties = {
-    position: "relative",
-    width: "100%",
-    paddingTop: "56.25%" /* 16:9のアスペクト比 */,
-  };
-
-  const iframeStyle: CSSProperties = {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    width: "100%",
-    height: "100%",
-    border: "none",
-  };
-
   return (
     <IntrodcutionBoxLayout
       title="LinuxClubについて"
@@ -59,12 +56,13 @@ export default function AboutUs() {
             <div style={responsiveIframeStyle}>
               <iframe
                 style={iframeStyle}
+                loading="lazy"
                 src="https://www.youtube-nocookie.com/embed/P-QN-Y7tp3M?si=3DxBB1qao47y0g10"
-                title="YouTube video player"
+                title="LinuxClub 紹介動画"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
-              ></iframe>
+              />
             </div>
           </div>
         </div>
