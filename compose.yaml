@@ -3,7 +3,7 @@ services:
     image: nginx:latest
     environment:
       VIRTUAL_HOST: www.linux.it.teu.ac.jp
-      VIRTUAL_PORT: 8080
+      VIRTUAL_PORT: 80
       LETSENCRYPT_HOST: www.linux.it.teu.ac.jp
       LETSENCRYPT_EMAIL: linuxclub.tut@gmail.com
     ports:
