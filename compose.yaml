@@ -25,8 +25,7 @@ services:
       - ./nginx-reverse-proxy/html:/usr/share/nginx/html
       - /var/run/docker.sock:/tmp/docker.sock:ro
     environment:
-      DEFAULT_HOST: www.linux.it.teu.ac.jp
-      HTTPS_METHOD: noredirect
+      DEFAULT_HOST: www.linux.it.teu.ac.jp,www.lcn.ad.jp
     restart: always
 
   acme-companion:
