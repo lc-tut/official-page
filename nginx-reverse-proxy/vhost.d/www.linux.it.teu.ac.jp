@@ -1,0 +1,2 @@
+# www.linux.it.teu.ac.jp を lcn.ad.jp にリダイレクト
+return 301 https://lcn.ad.jp$request_uri;
