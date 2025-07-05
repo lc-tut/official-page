@@ -20,14 +20,14 @@ export default function Hero() {
               プログラミング、3Dプリンタ、電子工作など技術全般、触れます。
             </h2>
 
-            <div className="flex flex-col mt-6 space-y-3 lg:space-y-0 lg:flex-row">
+            {/* <div className="flex flex-col mt-6 space-y-3 lg:space-y-0 lg:flex-row">
               <a
                 href="https://discord.gg/lcn"
                 className="px-6 py-3 text-white bg-blue-700 rounded-lg hover:bg-blue-800"
               >
                 Discordに参加
               </a>
-            </div>
+            </div> */}
           </div>
 
           <div className="flex lg:justify-end basis-1/2 text-center w-full md:pl-2 mt-8 lg:mt-0 lg:w-1/2">
