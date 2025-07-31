@@ -65,6 +65,15 @@ export default function Activities() {
           <p className="sm:mt-1 block text-sm sm:text-base text-gray-600 dark:text-gray-400">
             インターネットの基盤技術であるBGPを学び、実際に構築することで、ネットワーク技術の理解を深めています。
           </p>
+          <p>
+            ピアリングポリシーは
+            <a
+              className="dark:text-white px-1 underline"
+              href="/peering-policy.pdf"
+            >
+              こちら
+            </a>
+          </p>
         </div>
         <div className="block rounded-xl border border-gray-800 dark:border-gray-500 p-4">
           <span className="inline-block rounded-lg p-3">
