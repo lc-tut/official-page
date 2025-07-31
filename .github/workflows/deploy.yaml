@@ -1,0 +1,25 @@
+name: update-NodeFile
+
+on:
+    push:
+        branches:
+            - main
+    workflow_dispatch:
+
+jobs:
+    check-dns-records:
+        runs-on: self-hosted
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v3
+
+            - name: build
+              run: |
+                npm install
+                npm run build
+                
+              
+              
+              
+              
+#scp -i /home/tut-lc/.ssh/id_ed25519  local.lcn.ad.jp.zone  tut-lc@10.100.101.5:/var/lib/knot/zonefile/local.lcn.ad.jp.zone
