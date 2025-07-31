@@ -17,9 +17,5 @@ jobs:
               run: |
                 npm install
                 npm run build
-                
-              
-              
-              
-              
-#scp -i /home/tut-lc/.ssh/id_ed25519  local.lcn.ad.jp.zone  tut-lc@10.100.101.5:/var/lib/knot/zonefile/local.lcn.ad.jp.zone
+                scp -i /home/tut-lc/.ssh/id_ed25519
+                pwd
