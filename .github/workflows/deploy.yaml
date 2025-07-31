@@ -7,7 +7,7 @@ on:
     workflow_dispatch:
 
 jobs:
-    check-dns-records:
+    build-NodeFile:
         runs-on: self-hosted
         steps:
             - name: Checkout repository
@@ -17,9 +17,7 @@ jobs:
               run: |
                 npm install
                 npm run build
-                
-              
-              
-              
-              
-#scp -i /home/tut-lc/.ssh/id_ed25519  local.lcn.ad.jp.zone  tut-lc@10.100.101.5:/var/lib/knot/zonefile/local.lcn.ad.jp.zone
+                pwd
+            - name: Copy to server
+              run: |
+                scp -r -i /home/tut-lc/.ssh/id_ed25519  dist   tut-lc@10.101.0.29:/home/tut-lc/official-page/dist
