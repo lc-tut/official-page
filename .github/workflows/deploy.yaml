@@ -21,4 +21,4 @@ jobs:
             - name: Copy to server
               run: |
                 scp -r -i /home/tut-lc/.ssh/id_ed25519  dist   tut-lc@10.101.0.29:/home/tut-lc/official-page/
-                ssh -i /home/tut-lc/.ssh/id_ed25519 tut-lc@10.101.0.29 docker exec -it ${{secrets.DOCKER_CONTAINER_ID}} service nginx reload  
+                ssh -i /home/tut-lc/.ssh/id_ed25519 tut-lc@10.101.0.29 docker exec ${{secrets.DOCKER_CONTAINER_ID}} service nginx reload  
